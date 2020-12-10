@@ -21,3 +21,14 @@ ul{
 a{
     text-decoration: none;
 }
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

@@ -381,7 +381,7 @@ template {
 
 body {
   font-family: "Lato", sans-serif;
-  background-color: #333;
+  background-color: #101010;
   color: #ffffff;
 }
 
@@ -399,6 +399,17 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .info-header-top {
@@ -614,5 +625,129 @@ a {
 
 .offer a:hover {
   text-decoration: underline;
+}
+
+.nav-fixed {
+  padding: 0 80px;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.nav-fixed ul {
+  display: flex;
+  margin: 0;
+}
+
+.nav-fixed ul li {
+  padding: 20px;
+}
+
+.nav-fixed ul li:hover {
+  cursor: pointer;
+  background-color: white;
+  border-bottom: 2px solid #333;
+}
+
+.nav-fixed ul li a {
+  text-transform: uppercase;
+  color: #333;
+}
+
+footer {
+  padding: 40px 80px;
+  background-color: #f0f0f0;
+}
+
+.list-footer h5 {
+  color: #333;
+}
+
+.list-footer ul {
+  padding: 0;
+}
+
+.list-footer ul li {
+  padding: 6.6666666667px 0;
+}
+
+.list-footer ul li a {
+  color: #333;
+  font-size: 14px;
+}
+
+.list-footer ul li a:hover {
+  text-decoration: underline;
+}
+
+.icon-footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.icon-footer i {
+  font-size: 42px;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+#instagram {
+  color: #ff8a85;
+}
+
+#facebook {
+  color: blue;
+}
+
+#twitter {
+  color: #5cbff7;
+}
+
+#youtube {
+  color: red;
+}
+
+#pinterest {
+  color: #7c0000;
+}
+
+#rss {
+  color: orange;
+}
+
+.footer-bottom {
+  background-color: #101010;
+  padding: 10px 0;
+}
+
+.info-img img {
+  padding: 0 20px;
+}
+
+.copyright ul {
+  display: flex;
+}
+
+.copyright ul li {
+  padding: 0 20px;
+}
+
+.copyright ul li a {
+  font-size: 11.6666666667px;
+  color: gray;
+}
+
+.copyright ul li a:hover {
+  cursor: pointer;
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.copyright ul li span {
+  font-size: 14px;
 }
 

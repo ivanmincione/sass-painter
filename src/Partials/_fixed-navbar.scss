@@ -1,0 +1,34 @@
+.header-bottom{
+    // position: fixed;
+    // width: 100%;
+}
+
+.nav-fixed{
+    padding: 0 $spacing * 4;
+    background-color: $bgSecondary;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    // position: fixed;
+    // width: 100%;
+
+    ul{
+        display: flex;
+        margin: 0;
+
+        li{
+            padding: $spacing;
+
+            &:hover{
+                cursor: pointer;
+                background-color: white;
+                border-bottom: 2px solid $fontSecondary;
+            }
+
+            a{
+                text-transform: uppercase;
+                color: $fontSecondary;
+            }
+        }
+    }
+}
