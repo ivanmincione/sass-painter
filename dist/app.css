@@ -382,6 +382,7 @@ template {
 body {
   font-family: "Lato", sans-serif;
   background-color: #333;
+  color: #ffffff;
 }
 
 ul {
@@ -392,15 +393,11 @@ a {
   text-decoration: none;
 }
 
-header {
-  padding: 0 150px;
-}
-
 .info-header-top {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 20px 0;
+  padding: 20px 150px;
 }
 
 .info-header-top span {
@@ -428,11 +425,29 @@ header {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-top: 20px;
+  padding: 20px 150px;
+}
+
+#logo {
+  cursor: pointer;
 }
 
 .list-menu ul {
   display: flex;
+}
+
+.list-menu ul li {
+  position: relative;
+}
+
+.list-menu ul li:hover .drop-menu {
+  display: block;
+}
+
+.list-menu ul li:hover a {
+  background-color: #ffffff;
+  color: #333;
+  cursor: pointer;
 }
 
 .list-menu ul li a {
@@ -440,13 +455,85 @@ header {
   color: #ffffff;
 }
 
-.list-menu ul li a:hover {
+.list-menu ul li a i {
+  margin-left: 5px;
+}
+
+.list-menu ul li .drop-menu {
   background-color: #ffffff;
   color: #333;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  display: none;
+}
+
+.list-menu ul li .drop-menu ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.list-menu ul li .drop-menu ul li {
+  padding: 20px;
+}
+
+.list-menu ul li .drop-menu ul li a {
+  color: #333;
+  padding: 0;
   cursor: pointer;
 }
 
-.list-menu ul li a i {
-  margin-left: 5px;
+.list-menu ul li .drop-menu ul li a:hover {
+  text-decoration: underline;
+}
+
+.header-center {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.bg-img img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.title ul {
+  padding: 0;
+}
+
+.download {
+  background-color: #666;
+  display: flex;
+  align-items: center;
+  max-width: 200px;
+  padding: 5px;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.download i {
+  color: #ffffff;
+  margin-left: 20px;
+  font-size: 21px;
+}
+
+.item {
+  border-right: 1px solid #ffffff;
+  padding: 0 5px;
+}
+
+.item p:first-child {
+  text-transform: uppercase;
+}
+
+.item p {
+  margin: 0;
 }
 

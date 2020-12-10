@@ -1,12 +1,12 @@
 header{
-    padding: 0 150px;
+    // padding: 0 150px;
 }
 
 .info-header-top{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: $spacing 0;
+    padding: $spacing 150px;
 
     span{
         padding: 0 $spacing;
@@ -14,7 +14,7 @@ header{
         color: gray;
 
         &:hover{
-            color: $font-color;
+            color: $fontPrimary;
             text-decoration: underline;
             cursor: pointer;
         }
@@ -32,10 +32,13 @@ header{
 
 .menu-header{
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-start ;
     align-items: center;
-    padding-top: $spacing;
+    padding: $spacing 150px;
+}
 
+#logo{
+    cursor: pointer;
 }
 
 .list-menu{
@@ -44,22 +47,112 @@ header{
         display: flex;
 
         li{
+            position: relative;
+
+            &:hover .drop-menu{
+                display: block;
+            }
+
+            &:hover a {
+                background-color: $bgHover;
+                color: $fontSecondary;
+                cursor: pointer;
+            }
 
             a{
                 padding: $spacing;
-                color: $font-color;
-
-                &:hover{
-                    background-color: #ffffff;
-                    color: #333;
-                    cursor: pointer;
-
-                }
+                color: $fontPrimary;
 
                 i{
                     margin-left: 5px;
                 }
             }
+
+            .drop-menu{
+                background-color: $bgHover;
+                color: $fontSecondary;
+                position: absolute;
+                top: 20px;
+                left: 0;
+                display: none;
+
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+
+                    li{
+                        padding: $spacing ;
+
+                        a{
+                            color: $fontSecondary;
+                            padding: 0 ;
+                            cursor: pointer;
+
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
+}
+
+.header-center{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bg-img img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.title{
+
+    ul{
+        padding: 0;
+    }
+
+}
+
+.download{
+    background-color: #666;
+    display: flex;
+    align-items: center;
+    max-width: 200px;
+    padding: $spacing - 15px;
+    line-height: normal;
+    cursor: pointer;
+
+    i{
+        color: $fontPrimary;
+        margin-left: $spacing;
+        font-size: $font-size * 1.5;
+    }
+
+}
+
+.item{
+    border-right: 1px solid $fontPrimary;
+    padding: 0 $spacing - 15px;
+
+
+    p:first-child {
+        text-transform: uppercase;
+    }
+
+    p{
+        margin: 0;
+    }
+
+
 }
