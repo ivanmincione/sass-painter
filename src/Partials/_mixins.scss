@@ -1,0 +1,21 @@
+@mixin row-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin row-around{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@mixin bg-fixed{
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}

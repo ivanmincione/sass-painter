@@ -7,6 +7,7 @@ header{
     justify-content: flex-end;
     align-items: center;
     padding: $spacing 150px;
+    background-color: $bgPrimary;
 
     span{
         padding: 0 $spacing;
@@ -31,6 +32,7 @@ header{
 }
 
 .menu-header{
+    background-color: $bgPrimary;
     display: flex;
     justify-content: flex-start ;
     align-items: center;
@@ -107,15 +109,8 @@ header{
     display: flex;
     justify-content: flex-end;
     padding: $spacing $spacing * 4;
-}
-
-.bg-img img{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
+    background-image:url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg");
+    background-position: center;
 }
 
 .title{
@@ -164,6 +159,7 @@ header{
 .box{
     background-color: black;
     padding: $spacing;
+    padding-bottom: 100px;
 }
 
 .info-price{

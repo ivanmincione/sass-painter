@@ -381,8 +381,8 @@ template {
 
 body {
   font-family: "Lato", sans-serif;
-  background-color: #101010;
   color: #ffffff;
+  font-size: 14px;
 }
 
 h1 {
@@ -406,10 +406,25 @@ a {
   margin: 0 auto;
 }
 
-.row {
+.row-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row-around {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+section {
+  padding-top: 80px;
+  padding-bottom: 40px;
 }
 
 .info-header-top {
@@ -417,6 +432,7 @@ a {
   justify-content: flex-end;
   align-items: center;
   padding: 20px 150px;
+  background-color: #101010;
 }
 
 .info-header-top span {
@@ -441,6 +457,7 @@ a {
 }
 
 .menu-header {
+  background-color: #101010;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -514,15 +531,8 @@ a {
   display: flex;
   justify-content: flex-end;
   padding: 20px 80px;
-}
-
-.bg-img img {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
+  background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg");
+  background-position: center;
 }
 
 .title {
@@ -569,6 +579,7 @@ a {
 .box {
   background-color: black;
   padding: 20px;
+  padding-bottom: 100px;
 }
 
 .info-price {
@@ -653,6 +664,100 @@ a {
 .nav-fixed ul li a {
   text-transform: uppercase;
   color: #333;
+}
+
+#quick {
+  background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/intro.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.title-quick a {
+  margin-left: 20px;
+  color: #ffffff;
+  font-size: 21px;
+}
+
+.img-intro {
+  position: relative;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.img-intro #img-border {
+  position: absolute;
+  margin: 0 auto;
+  top: 0px;
+  left: 0;
+  right: 0;
+  z-index: 9;
+  bottom: 0;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+}
+
+.img-intro #img-video {
+  position: relative;
+  top: 5px;
+  width: 98%;
+  border-radius: 20px;
+}
+
+.img-intro .playlink {
+  background-image: url("https://www.painterartist.com/static/ptr/images/icons/ico-play-circle-white.png");
+  display: inline-block;
+  width: 110px;
+  height: 110px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.title-carousel h1 {
+  color: #333;
+}
+
+.title-carousel p {
+  color: #333;
+}
+
+.image-slider {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-slider img {
+  width: 100%;
+}
+
+.image-slider i {
+  color: orange;
+  font-size: 28px;
+  cursor: pointer;
+  padding: 20px;
+}
+
+#bg-fixed-middle {
+  background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/image-bg-02.jpg");
+  height: 650px;
+  background-color: #ccc;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 
 footer {

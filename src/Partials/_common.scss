@@ -1,7 +1,8 @@
 body{
     font-family: 'Lato', sans-serif;
-    background-color: $bgPrimary;
+    // background-color: $bgPrimary;
     color: $fontPrimary;
+    font-size: $font-size;
 
 }
 
@@ -27,8 +28,23 @@ a{
     margin: 0 auto;
 }
 
-.row{
+.row-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-around{
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.text-center{
+    text-align: center;
+}
+
+section{
+    padding-top: $spacing * 4;
+    padding-bottom: $spacing * 2;
 }
