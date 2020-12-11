@@ -21,7 +21,7 @@
 
             &:hover{
                 cursor: pointer;
-                background-color: white;
+                background-color: $bgHover;
                 border-bottom: 2px solid $fontSecondary;
             }
 

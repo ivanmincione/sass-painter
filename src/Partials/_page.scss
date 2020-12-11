@@ -53,6 +53,10 @@
 }
 
 // CAROUSEL section
+#carousel{
+    background-color: $bgSecondary;
+}
+
 .title-carousel{
     h1{
         color: $fontSecondary;
@@ -137,6 +141,26 @@
         transform: scale(1.05);
         transition: 1.5s;
         cursor: pointer;
+    }
+}
+
+//section info-bottom
+#info-bottom{
+    background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/brushpacks-bg.jpg");
+}
+
+.first-info-box, .second-info-box{
+    background-color: #ffffff;
+    margin: $spacing;
+    padding: $spacing * 2;
+    width: 50%;
+
+    h2{
+        color: $fontSecondary;
+    }
+
+    p{
+        color: $fontSecondary;
     }
 
 }

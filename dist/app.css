@@ -485,7 +485,7 @@ section {
 }
 
 .list-menu ul li:hover a {
-  background-color: #ffffff;
+  background-color: #00ff85;
   color: #333;
   cursor: pointer;
 }
@@ -500,7 +500,7 @@ section {
 }
 
 .list-menu ul li .drop-menu {
-  background-color: #ffffff;
+  background-color: #00ff85;
   color: #333;
   position: absolute;
   top: 20px;
@@ -644,7 +644,7 @@ section {
 
 .nav-fixed {
   padding: 0 80px;
-  background-color: #f0f0f0;
+  background-color: #6ed5f6;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -661,7 +661,7 @@ section {
 
 .nav-fixed ul li:hover {
   cursor: pointer;
-  background-color: white;
+  background-color: #00ff85;
   border-bottom: 2px solid #333;
 }
 
@@ -723,6 +723,10 @@ section {
   bottom: 0;
   margin-top: auto;
   margin-bottom: auto;
+}
+
+#carousel {
+  background-color: #6ed5f6;
 }
 
 .title-carousel h1 {
@@ -818,9 +822,31 @@ section {
   cursor: pointer;
 }
 
+#info-bottom {
+  background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/brushpacks-bg.jpg");
+}
+
+.first-info-box,
+.second-info-box {
+  background-color: #ffffff;
+  margin: 20px;
+  padding: 40px;
+  width: 50%;
+}
+
+.first-info-box h2,
+.second-info-box h2 {
+  color: #333;
+}
+
+.first-info-box p,
+.second-info-box p {
+  color: #333;
+}
+
 footer {
   padding: 40px 80px;
-  background-color: #f0f0f0;
+  background-color: #6ed5f6;
 }
 
 .list-footer h5 {
