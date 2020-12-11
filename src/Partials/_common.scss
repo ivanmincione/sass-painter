@@ -1,9 +1,7 @@
 body{
     font-family: 'Lato', sans-serif;
-    // background-color: $bgPrimary;
     color: $fontPrimary;
     font-size: $font-size;
-
 }
 
 h1{
@@ -23,8 +21,12 @@ a{
     text-decoration: none;
 }
 
+p{
+    margin-bottom: $spacing;
+}
+
 .container{
-    max-width: 1200px;
+    max-width: 1170px;
     margin: 0 auto;
 }
 

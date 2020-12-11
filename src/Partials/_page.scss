@@ -5,13 +5,10 @@
     position: relative;
 }
 
-.title-quick{
-
-    a{
-        margin-left: $spacing;
-        color: $fontPrimary;
-        font-size: $font-size * 1.5;
-    }
+.title-quick a{
+    margin-left: $spacing;
+    color: $fontPrimary;
+    font-size: $font-size * 1.5;
 }
 
 .img-intro{
@@ -71,7 +68,7 @@
     @include row-center;
 
     img{
-        width: 100%;
+        width: 80%;
     }
 
     i{
@@ -88,4 +85,58 @@
     height: 650px;
     background-color: #ccc;
     @include bg-fixed;
+}
+
+// section flex-photo
+.flex-photo{
+    background-color: #222;
+}
+
+.title-flex-photo p{
+    margin-bottom: $spacing * 4;
+    font-size: $font-size * 1.2;
+}
+
+.photo img{
+    width: 80%;
+}
+
+.text-flex-photo{
+    margin: $spacing ;
+
+    p {
+        font-size: $font-size * 1.2;
+    }
+}
+
+//  bg-fixed-bottom
+#bg-fixed-bottom{
+    background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/image-bg-01.jpg");
+    height: 650px;
+    background-color: #ccc;
+    @include bg-fixed;
+}
+
+// section tools
+.title-tools h1{
+    color: $fontSecondary;
+}
+
+#tools{
+    .row-around{
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+}
+
+#tools img{
+    margin: $spacing;
+    border-radius: 5px;
+
+    &:hover{
+        transform: scale(1.05);
+        transition: 1.5s;
+        cursor: pointer;
+    }
+
 }

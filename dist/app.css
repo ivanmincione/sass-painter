@@ -401,8 +401,12 @@ a {
   text-decoration: none;
 }
 
+p {
+  margin-bottom: 20px;
+}
+
 .container {
-  max-width: 1200px;
+  max-width: 1170px;
   margin: 0 auto;
 }
 
@@ -737,7 +741,7 @@ section {
 }
 
 .image-slider img {
-  width: 100%;
+  width: 80%;
 }
 
 .image-slider i {
@@ -758,6 +762,60 @@ section {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+}
+
+.flex-photo {
+  background-color: #222;
+}
+
+.title-flex-photo p {
+  margin-bottom: 80px;
+  font-size: 16.8px;
+}
+
+.photo img {
+  width: 80%;
+}
+
+.text-flex-photo {
+  margin: 20px;
+}
+
+.text-flex-photo p {
+  font-size: 16.8px;
+}
+
+#bg-fixed-bottom {
+  background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/image-bg-01.jpg");
+  height: 650px;
+  background-color: #ccc;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.title-tools h1 {
+  color: #333;
+}
+
+#tools .row-around {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+#tools img {
+  margin: 20px;
+  border-radius: 5px;
+}
+
+#tools img:hover {
+  transform: scale(1.05);
+  transition: 1.5s;
+  cursor: pointer;
 }
 
 footer {
